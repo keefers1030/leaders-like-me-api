@@ -22,32 +22,47 @@ h1{
 
 h2{
   font-family: 'New Tegomin', serif;
-font-size: 2rem;
+  font-size: 2rem;
+}
+
+.option1 {
+  order:1;
+  padding: 2rem;
+
+}
+
+.option2{
+  order:2;
+    padding: 2rem;
+
+}
+
+.option3{
+  order:3;
+    padding: 2rem;
+
 }
 
 .inputs {
   display: flex;
-  align-content: center;
-  align-items: center;
+  align-content:inherit;
+  align-items:baseline;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.inputs > h2{
-  order: 0;
-}
 
 .big {
   font-size: 1.2em;
   align-items: center;
-  order: 2;
 }
 
-/* Custom dropdown */
 .custom-dropdown {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px; /* demo only */
+  margin: 10px;
+  align-items: center;
 }
 
 .custom-dropdown select {
