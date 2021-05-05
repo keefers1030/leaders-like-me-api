@@ -1,0 +1,23 @@
+{
+  "name": "leaders-like-me-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "leaders.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keefers1030/leaders-like-me-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keefers1030/leaders-like-me-api/issues"
+  },
+  "homepage": "https://github.com/keefers1030/leaders-like-me-api#readme",
+  "dependencies": {
+    "eslint": "^7.25.0"
+  }
+}
