@@ -70,8 +70,8 @@ const leaders = [{
 {
   name: 'Cathy Park Hong',
   image: 'images/cdoroshow',
-  category: 'SOCIAL JUSTICE',
-  community: 'BIPOC', // LGBTQIA
+  category: 'SOCIAL JUSTICE', // PERFORMING ART
+  community: 'AAPI', // FEMALE
   link: 'http://www.cathyparkhong.com/'
 },
 ]
