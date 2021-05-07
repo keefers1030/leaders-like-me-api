@@ -1,18 +1,22 @@
-meta(charset="UTF-8")
-meta(http-equiv="X-UA-Compatible", content="IE=edge")
-meta(name="viewport", content="width=device-width,initial-scale=1")
-title Leaders like me
-link(rel="stylesheet", href="../public/styles.css")
-script(src="scripts.js")
-link(rel="preconnect", href="https://fonts.gstatic.com")
-link(href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap", rel="stylesheet")
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width,initial-scale=1")
+  title Leaders like me
+  style
+    include ../public/styles.css
+  link(rel="preconnect", href="https://fonts.gstatic.com")
+  link(href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap", rel="stylesheet")
+
+body 
 .header-container
   header
     p
       a(href="https://www.youtube.com/watch?v=TiheM6wSwes&ab_channel=TEDxTalks") #representationmatters
 .logos
-  img(src="../images/leaders.png", alt="Leaders")
+  img(src="../images/leaders.png")
   h1 Leaders like me
+    
 .inputs
   .option1
     h2 My gender is

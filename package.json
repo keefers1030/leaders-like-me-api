@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/keefers1030/leaders-like-me-api#readme",
   "dependencies": {
-    "eslint": "^7.25.0"
+    "eslint": "^7.25.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
   }
 }
