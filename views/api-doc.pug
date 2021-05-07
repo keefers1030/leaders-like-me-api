@@ -1,0 +1,205 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Leaders like me
+link(rel="stylesheet", href="../public/styles.css")
+script(src="scripts.js")
+link(rel="preconnect", href="https://fonts.gstatic.com")
+link(href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap", rel="stylesheet")
+.header-container
+  header
+    p
+      a(href="https://www.youtube.com/watch?v=TiheM6wSwes&ab_channel=TEDxTalks") #representationmatters
+.logos
+  img(src="../images/leaders.png", alt="Leaders")
+  h1 Leaders like me
+.howtouse
+  h2 API Documentation
+  p
+    | Leaders like me is a REST API (Application Programming Interface) created with the intention to give users resources for people who have contributed to society in innovative ways in the fields of STEAM and Social Justice. It was created by a teacher turned web developer who, when looking for anti-racist and inclusive exemplars for his lessons, had trouble finding resources. A survey was given to educators and people within the tech field to help populate the names in the database. This is, by no means, a finite resource, but merely a stepping stone to a bigger resource. The user can use the home page to populate a result inputting their own information, but there are other ways to get the data using the GET requests below.
+
+    br
+    br
+    | 
+Below is the API documentation for the routes used to access the database.
+
+  .documentation
+    h3 Get Request: Returning all leaders
+    code
+      p
+        | 
+Request:
+        br
+        | 
+const leaders = require('leaders');
+        br
+        | 
+leaders.get('http://localhost:1337/leaders/all')
+        br
+        | 
+})
+        br
+        | 
+Response:
+        br
+        | 
+const leaders = [{
+        br
+        | 
+name: 'Katherine Johnson',
+        br
+        | 
+image: 'images/kjohnson.jpg',
+        br
+        | 
+category: 'MATH',
+        br
+        | 
+community: 'BIPOC',
+        br
+        | 
+link: 'https://www.nasa.gov/content/katherine-johnson-biography'
+        br
+        | 
+}, {
+        br
+        | 
+name: 'Alan Turing',
+        br
+        | 
+image: 'images/aturing.jpg',
+        br
+        | 
+category: 'ENGINEERING',
+        br
+        | 
+community: 'LGBTQIA',
+        br
+        | 
+link: 'https://en.wikipedia.org/wiki/Alan_Turing'
+        br
+        | 
+}, ...
+        br
+    h3 Get Request: How to get a leader by name
+    p
+      | 
+Request:
+      br
+      | 
+const leaders = require('leaders');
+      br
+      | 
+leaders.get('http://localhost:1337/leaders/johnson')
+      br
+      | 
+})
+      br
+      | 
+Response:
+      br
+      | 
+{
+      br
+      | 
+name: 'Katherine Johnson',
+      br
+      | 
+image: 'images/kjohnson.jpg',
+      br
+      | 
+category: 'MATH',
+      br
+      | 
+community: 'BIPOC',
+      br
+      | 
+link: 'https://www.nasa.gov/content/katherine-johnson-biography'
+      br
+      | 
+}
+      br
+    h3 Get Request: How to get a leader by discipline
+    p
+      | 
+Request:
+      br
+      | 
+const leaders = require('leaders');
+      br
+      | 
+leaders.get('http://localhost:1337/leaders/socialjustice')
+      br
+      | 
+})
+      br
+      | 
+Response:
+      br
+      | 
+{
+      br
+      | 
+name: 'Cathy Park Hong',
+      br
+      | 
+image: 'images/cdoroshow',
+      br
+      | 
+category: 'SOCIAL JUSTICE',
+      br
+      | 
+community: 'AAPI',
+      br
+      | 
+link: 'http://www.cathyparkhong.com/'
+      br
+      | 
+},
+      br
+    h3 Get Request: How to get a leader by the community he/she/they belong to
+    p
+      | 
+Request:
+      br
+      | 
+const leaders = require('leaders');
+      br
+      | 
+leaders.get('http://localhost:1337/leaders/aapi')
+      br
+      | 
+})
+      br
+      | 
+Response:
+      br
+      | 
+{
+      br
+      | 
+name: 'Cathy Park Hong',
+      br
+      | 
+image: 'images/cdoroshow',
+      br
+      | 
+category: 'SOCIAL JUSTICE',
+      br
+      | 
+community: 'AAPI',
+      br
+      | 
+link: 'http://www.cathyparkhong.com/'
+      br
+      | 
+},
+      br
+    p
+      | *Note that some leaders belong to multiple identities. This is called 
+      i Intersectionality
+      | .
+
+footer
+  .footer-container
+    p © 2021 Keith March Mistler | API Documentation

@@ -66,7 +66,6 @@ const leaders = [{
   community: 'BIPOC', // LGBTQIA
   link: 'https://www.gq.com/story/ceyenne-doroshow-glits-founder-profile'
 },
-
 {
   name: 'Cathy Park Hong',
   image: 'images/cdoroshow',
