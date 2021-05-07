@@ -3,9 +3,16 @@ USE leadersLikeMe;
 CREATE TABLE leaders (
   id INT auto_increment,
   name VARCHAR(255),
-  image,
-  category ENUM ('BIPOC',),
-  division ENUM (
+  image LOAD_FILE,
+  category ENUM (
+    'Female',
+    'BIPOC',
+    'AAPI',
+    'LGBTQIA',
+    'Disabled',
+    'Neurodivergent',
+  ),
+  steam ENUM (
     'Science',
     'Technology',
     'Engineering',
@@ -13,6 +20,7 @@ CREATE TABLE leaders (
     'Math',
     'Social Justice'
   ),
+  link VARCHAR (255),
   createdAt DATETIME DEFAULT NOW(),
   updatedAt DATETIME DEFAULT NOW() ON UPDATE NOW(),
   deletedAt DATETIME,
@@ -20,11 +28,11 @@ CREATE TABLE leaders (
 );
 INSERT INTO
   leaders(
-    location,
-    mascot,
-    abbreviation,
-    conference,
-    division
+    name,
+    image,
+    category,
+    steam,
+    link
   )
 VALUES
   ()
