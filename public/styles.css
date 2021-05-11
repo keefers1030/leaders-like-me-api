@@ -168,18 +168,31 @@ footer {
   font-size: 1rem;
 }
 
-.documentation > p {
+.documentation>p {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   text-align: left;
   padding-left: 8rem;
   font-weight: 100;
-  line-height: 120%;
+  line-height: 1.5rem;
 }
 
-.howtouse > p{
+.howtouse>p {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   align-items: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  line-height: 1.5rem;
+}
 
+h3 {
+  color: #62d397;
+}
+
+.documentation {
+  background-color: rgba(0, 0, 0, .15);
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding: 1rem;
 }
