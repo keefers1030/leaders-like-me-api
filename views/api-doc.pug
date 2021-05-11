@@ -20,12 +20,11 @@ body
   h2 API Documentation
   p
     | Leaders like me is a REST API (Application Programming Interface) created with the intention to give users resources for people who have contributed to society in innovative ways in the fields of STEAM and Social Justice. It was created by a teacher turned web developer who, when looking for anti-racist and inclusive exemplars for his lessons, had trouble finding resources. A survey was given to educators and people within the tech field to help populate the names in the database. This is, by no means, a finite resource, but merely a stepping stone to a bigger resource. The user can use the home page to populate a result inputting their own information, but there are other ways to get the data using the GET requests below.
-
     br
     br
     | Below is the API documentation for the routes used to access the database.
 .documentation
-    h3 Get Request: Returning all leaders
+    h3 METHOD: Get - Returning all leaders
     code
       p
         | REQUEST
@@ -64,7 +63,8 @@ body
         br
         | }, ...
         br
-    h3 Get Request: How to get a leader by name
+    h3 METHOD: Get - How to get a leader by name
+    code 
     p
       | REQUEST
       br
@@ -90,7 +90,8 @@ body
       br
       | }
       br
-    h3 Get Request: How to get a leader by discipline
+    h3 METHOD: Get - How to get a leader by discipline
+    code 
     p
       | REQUEST
       br
@@ -116,7 +117,8 @@ body
       br
       | },
       br
-    h3 Get Request: How to get a leader by the community he/she/they belong to
+    h3 METHOD: GET - How to get a leader by the community he/she/they belong to
+    code
     p
       | REQUEST
       br
@@ -126,6 +128,28 @@ body
       br
       | })
       br
+      | RESPONSE
+      br
+      | {
+      br
+      | name: 'Cathy Park Hong',
+      br
+      | image: 'images/cdoroshow',
+      br
+      | category: 'SOCIAL JUSTICE',
+      br
+      | community: 'AAPI',
+      br
+      | link: 'http://www.cathyparkhong.com/'
+      br
+      | },
+      br
+
+      h3 METHOD: POST - Add a new leader
+      code
+    p
+      | POST
+
       | RESPONSE
       br
       | {
