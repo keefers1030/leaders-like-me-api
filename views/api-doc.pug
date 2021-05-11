@@ -3,8 +3,8 @@ head
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
   meta(name="viewport", content="width=device-width,initial-scale=1")
   title Leaders like me
-    style
-      include ../public/styles.cssscript(src="scripts.js")
+  style
+    include ../public/styles.css
   link(rel="preconnect", href="https://fonts.gstatic.com")
   link(href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap", rel="stylesheet")
 
@@ -14,7 +14,7 @@ body
     p
       a(href="https://www.youtube.com/watch?v=TiheM6wSwes&ab_channel=TEDxTalks") #representationmatters
 .logos
-  img(src="/../images/leaders.png", alt="Leaders")
+  img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 .howtouse
   h2 API Documentation
@@ -23,185 +23,126 @@ body
 
     br
     br
-    | 
-Below is the API documentation for the routes used to access the database.
-
-  .documentation
+    | Below is the API documentation for the routes used to access the database.
+.documentation
     h3 Get Request: Returning all leaders
     code
       p
-        | 
-Request:
+        | REQUEST
         br
-        | 
-const leaders = require('leaders');
+        | const leaders = require('leaders');
         br
-        | 
-leaders.get('http://localhost:1337/leaders/all')
+        | leaders.get('http://localhost:1337/leaders/all')
         br
-        | 
-})
+        | })
         br
-        | 
-Response:
+        | RESPONSE
         br
-        | 
-const leaders = [{
+        | const leaders = [{
         br
-        | 
-name: 'Katherine Johnson',
+        | name: 'Katherine Johnson',
         br
-        | 
-image: 'images/kjohnson.jpg',
+        | image: 'images/kjohnson.jpg',
         br
-        | 
-category: 'MATH',
+        | category: 'MATH',
         br
-        | 
-community: 'BIPOC',
+        | community: 'BIPOC',
         br
-        | 
-link: 'https://www.nasa.gov/content/katherine-johnson-biography'
+        | link: 'https://www.nasa.gov/content/katherine-johnson-biography'
         br
-        | 
-}, {
+        | }, {
         br
-        | 
-name: 'Alan Turing',
+        | name: 'Alan Turing',
         br
-        | 
-image: 'images/aturing.jpg',
+        | image: 'images/aturing.jpg',
         br
-        | 
-category: 'ENGINEERING',
+        | category: 'ENGINEERING',
         br
-        | 
-community: 'LGBTQIA',
+        | community: 'LGBTQIA',
         br
-        | 
-link: 'https://en.wikipedia.org/wiki/Alan_Turing'
+        | link: 'https://en.wikipedia.org/wiki/Alan_Turing'
         br
-        | 
-}, ...
+        | }, ...
         br
     h3 Get Request: How to get a leader by name
     p
-      | 
-Request:
+      | REQUEST
       br
-      | 
-const leaders = require('leaders');
+      | const leaders = require('leaders');
       br
-      | 
-leaders.get('http://localhost:1337/leaders/johnson')
+      | leaders.get('http://localhost:1337/leaders/johnson')
       br
-      | 
-})
+      | })
       br
-      | 
-Response:
+      | RESPONSE
       br
-      | 
-{
+      | {
       br
-      | 
-name: 'Katherine Johnson',
+      | name: 'Katherine Johnson',
       br
-      | 
-image: 'images/kjohnson.jpg',
+      | image: 'images/kjohnson.jpg',
       br
-      | 
-category: 'MATH',
+      | category: 'MATH',
       br
-      | 
-community: 'BIPOC',
+      | community: 'BIPOC',
       br
-      | 
-link: 'https://www.nasa.gov/content/katherine-johnson-biography'
+      | link: 'https://www.nasa.gov/content/katherine-johnson-biography'
       br
-      | 
-}
+      | }
       br
     h3 Get Request: How to get a leader by discipline
     p
-      | 
-Request:
+      | REQUEST
       br
-      | 
-const leaders = require('leaders');
+      | const leaders = require('leaders');
       br
-      | 
-leaders.get('http://localhost:1337/leaders/socialjustice')
+      | leaders.get('http://localhost:1337/leaders/socialjustice')
       br
-      | 
-})
+      | })
       br
-      | 
-Response:
+      | RESPONSE
       br
-      | 
-{
+      | {
       br
-      | 
-name: 'Cathy Park Hong',
+      | name: 'Cathy Park Hong',
       br
-      | 
-image: 'images/cdoroshow',
+      | image: 'images/cdoroshow',
       br
-      | 
-category: 'SOCIAL JUSTICE',
+      | category: 'SOCIAL JUSTICE',
       br
-      | 
-community: 'AAPI',
+      | community: 'AAPI',
       br
-      | 
-link: 'http://www.cathyparkhong.com/'
+      | link: 'http://www.cathyparkhong.com/'
       br
-      | 
-},
+      | },
       br
     h3 Get Request: How to get a leader by the community he/she/they belong to
     p
-      | 
-Request:
+      | REQUEST
       br
-      | 
-const leaders = require('leaders');
+      | const leaders = require('leaders');
       br
-      | 
-leaders.get('http://localhost:1337/leaders/aapi')
+      | leaders.get('http://localhost:1337/leaders/aapi')
       br
-      | 
-})
+      | })
       br
-      | 
-Response:
+      | RESPONSE
       br
-      | 
-{
+      | {
       br
-      | 
-name: 'Cathy Park Hong',
+      | name: 'Cathy Park Hong',
       br
-      | 
-image: 'images/cdoroshow',
+      | image: 'images/cdoroshow',
       br
-      | 
-category: 'SOCIAL JUSTICE',
+      | category: 'SOCIAL JUSTICE',
       br
-      | 
-community: 'AAPI',
+      | community: 'AAPI',
       br
-      | 
-link: 'http://www.cathyparkhong.com/'
+      | link: 'http://www.cathyparkhong.com/'
       br
-      | 
-},
+      | },
       br
-    p
-      | *Note that some leaders belong to multiple identities. This is called 
-      i Intersectionality
-      | .
+ 
 
 footer
   .footer-container

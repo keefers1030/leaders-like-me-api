@@ -2,7 +2,6 @@ const express = require('express');
 const leaders = require('./leaders')
 // const { getAllLeaders, getLeaderName, getCategory, addNewLeader } = require('./controller/leadersController.js')
 
-
 const app = express()
 
 app.set('view engine', 'pug')
@@ -15,8 +14,8 @@ app.get('/', (req, res) => {
 
 //app.post('/leaders', express.json(), addNewLeader)
 
-app.get('/api-doc.pug', (req, res) => {
-  res.render('api-doc.pug');
+app.get('/api-doc', (req, res) => {
+  res.render('api-doc');
 });
 
 app.use('/public', express.static(__dirname + "/public"));
