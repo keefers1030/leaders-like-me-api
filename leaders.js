@@ -3,7 +3,8 @@ const leaders = [{
   image: 'images/kjohnson.jpg',
   category: 'MATH',
   community: 'BIPOC',
-  link: 'https://www.nasa.gov/content/katherine-johnson-biography'
+  link: 'https://www.nasa.gov/content/katherine-johnson-biography',
+  slug: 'katherine-johnson',
 }, {
   name: 'Alan Turing',
   image: 'images/aturing.jpg',
