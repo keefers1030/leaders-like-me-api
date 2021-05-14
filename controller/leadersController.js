@@ -2,22 +2,22 @@
 const models = require('../models')
 
 const getAllLeaders = async (req, res) => {
-  const villains = await models.villains.findAll()
+  const leaders = await models.leaders.findAll()
 
-  return res.send(villains)
+  return res.send(leaders)
 }
 
 const getLeaderSlug = async (req, res) => {
   try {
     const { slug } = req.params
 
-    const villains = await models.villains.findOne({ where: { slug } })
+    const leaders = await models.leaders.findOne({ where: { slug } })
 
-    return villains
-      ? res.send(villains)
+    return leaders
+      ? res.send(leaders)
       : res.sendStatus(404)
   } catch (error) {
-    return res.status(500).send('Unable to retrieve villain, please try again')
+    return res.status(500).send('Unable to retrieve leader, please try again')
   }
 }
 
@@ -32,7 +32,7 @@ const addNewLeader = async (req, res) => {
 
   const newVillain = { name, movie, slug }
 
-  const villain = await models.villains.create(newVillain)
+  const villain = await models.leaders.create(newVillain)
 
   return res.status(201).send(villain)
 }
