@@ -35,4 +35,6 @@ INSERT INTO
     link
   )
 VALUES
-  ()
+  ();
+
+  CREATE USER 'leaders' @'localhost' IDENTIFIED WITH mysql_native_password BY 'password123';

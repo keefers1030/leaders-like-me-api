@@ -12,7 +12,6 @@ const leaders = [{
   community: 'LGBTQIA',
   link: 'https://en.wikipedia.org/wiki/Alan_Turing',
   slug: 'alan-turing'
-
 },{
   name: 'Ada Lovelace',
   image: 'images/alovelace.jpg',
@@ -20,7 +19,6 @@ const leaders = [{
   community: 'FEMALE',
   link: 'https://www.computerhistory.org/babbage/adalovelace/',
   slug: 'ada-lovelace'
-
 }
 ,{
   name: 'Stephen Hawking',
