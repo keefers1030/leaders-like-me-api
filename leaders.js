@@ -3,6 +3,7 @@ const leaders = [{
   image: 'images/kjohnson.jpg',
   category: 'MATH',
   community: 'BIPOC',
+  community2: '',
   link: 'https://www.nasa.gov/content/katherine-johnson-biography',
   slug: 'katherine-johnson'
 }, {
@@ -10,6 +11,7 @@ const leaders = [{
   image: 'images/aturing.jpg',
   category: 'ENGINEERING',
   community: 'LGBTQIA',
+  community2: '',
   link: 'https://en.wikipedia.org/wiki/Alan_Turing',
   slug: 'alan-turing'
 },{
@@ -17,6 +19,7 @@ const leaders = [{
   image: 'images/alovelace.jpg',
   category: 'ENGINEERING',
   community: 'FEMALE',
+  community2: '',
   link: 'https://www.computerhistory.org/babbage/adalovelace/',
   slug: 'ada-lovelace'
 }
@@ -25,6 +28,7 @@ const leaders = [{
   image: 'images/shawking.jpg',
   category: 'SCIENCE',
   community: 'DISABLED',
+  community2: '',
   link: 'https://www.frontiersofknowledgeawards-fbbva.es/galardonados/stephen-hawking-2/',
   slug: 'stephen-hawking'
 },
@@ -33,6 +37,7 @@ const leaders = [{
   image: 'images/fprice.jpg',
   category: 'ARTS',
   community: 'BIPOC',
+  community2: '',
   link: 'https://www.classicfm.com/discover-music/florence-price/',
   slug: 'florence-price'
 },
@@ -40,7 +45,8 @@ const leaders = [{
   name: 'Dolores Huerta',
   image: 'images/dhuerta.jpg',
   category: 'SOCIAL JUSTICE',
-  community: 'BIPOC', // female
+  community: 'BIPOC',
+  community2: 'FEMALE',
   link: 'https://doloreshuerta.org/dolores-huerta/',
   slug: 'dolors-huerta'
 },
@@ -48,7 +54,8 @@ const leaders = [{
   name: 'Nicole Cardoza',
   image: 'images/ncardozajpg.jpg',
   category: 'SOCIAL JUSTICE',
-  community: 'BIPOC', // female, mental health
+  community: 'BIPOC',
+  community2: 'FEMALE',
   link: 'https://www.nicoleacardoza.com/',
   slug: 'nicole-cardoza'
 },
@@ -56,15 +63,17 @@ const leaders = [{
   name: 'Brittany Packnett Cunningham',
   image: 'images/bpacknettcunningham.jpg',
   category: 'SOCIAL JUSTICE',
-  community: 'BIPOC', // female
+  community: 'BIPOC',
+  community2: 'FEMALE',
   link: 'https://brittanypacknett.com/',
   slug: 'brittany-cunningham'
 },
 {
   name: 'Rachel Cargle',
   image: 'images/rcargle.jpg',
-  category: 'SOCIAL JUSTICE', //writer
-  community: 'BIPOC', // female
+  category: 'SOCIAL JUSTICE',
+  community: 'BIPOC', 
+  community2: 'FEMALE',
   link: 'https://rachel-cargle.com/',
   slug: 'rachel-cargle'
 },
@@ -72,41 +81,151 @@ const leaders = [{
   name: 'Ceyenne Doroshow',
   image: 'images/cdoroshow.jpg',
   category: 'SOCIAL JUSTICE',
-  community: 'BIPOC', // LGBTQIA
+  community: 'BIPOC', 
+  community2: 'LGBTQIA',
   link: 'https://www.gq.com/story/ceyenne-doroshow-glits-founder-profile',
   slug: 'ceyenne-doroshow'
 },
 {
   name: 'Cathy Park Hong',
   image: 'images/cdoroshow.jpg',
-  category: 'SOCIAL JUSTICE', // PERFORMING ART
-  community: 'AAPI', // FEMALE
+  category: 'SOCIAL JUSTICE',
+  community: 'AAPI',
+  community2: 'FEMALE',
   link: 'http://www.cathyparkhong.com/',
   slug: 'cathy-park-hong'
 },
 {
   name: 'Jonny Sun',
   image: 'images/jsun.jpg',
-  category: 'ARTS', // Writer/activist
-  community: 'AAPI', // LGBTQIA
+  category: 'ARTS',
+  community: 'AAPI',
+  community2: 'LGBTQIA',
   link: 'https://jonnysun.com/',
   slug: 'jonny-sun'
 },
 {
   name: 'Amanda Gorman',
   image: 'images/agorman.jpg',
-  category: 'ARTS', //activist
-  community: 'BIPOC', // Female
+  category: 'ARTS',
+  community: 'BIPOC',
+  community2: 'FEMALE',
   link: 'https://www.theamandagorman.com/',
   slug: 'amanda-gorman'
 },
 {
   name: 'Mimi Zhu',
   image: 'images/mzhu.jpg',
-  category: 'ARTS', //activist
-  community: 'AAPI', // LGBTQIA
+  category: 'ARTS',
+  community: 'AAPI',
+  community2: 'LGBTQIA',
   link: 'https://www.instagram.com/mimizhuxiyuan/',
   slug: 'mimi-zhu'
 },
-
+{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},
+{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/*.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},
 ]
