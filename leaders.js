@@ -123,54 +123,54 @@ const leaders = [{
   slug: 'mimi-zhu'
 },
 {
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
+  name: 'Darien Sutton',
+  image: 'images/dsutton.jpg',
+  category: 'SCIENCE',
+  community: 'BIPOC',
   community2: '',
-  link: '',
-  slug: ''
+  link: 'https://twitter.com/DoctorDarienMD',
+  slug: 'darien-sutton'
 },
 {
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Bayard Rustin',
+  image: 'images/brustin.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'BIPOC',
+  community2: 'LGBTQIA',
+  link: 'https://www.historyisgaypodcast.com/notes/tag/Bayard+Rustin',
+  slug: 'bayard-rustin'
 },{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Laverne Cox',
+  image: 'images/lcox.jpg',
+  category: 'ARTS',
+  community: 'BIPOC',
+  community2: 'LGBTQIA',
+  link: 'https://lavernecox.com/',
+  slug: 'laverne-cox'
 },{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Mindy Kaling',
+  image: 'images/mkaling.jpg',
+  category: 'ARTS',
+  community: 'AAPI',
+  community2: 'FEMALE',
+  link: 'https://www.instagram.com/mindykaling/?hl=en',
+  slug: 'mindy-kaling'
 },{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Kehinde Wiley',
+  image: 'images/kwiley.jpg',
+  category: 'ARTS',
+  community: 'BIPOC',
+  community2: 'LGBTQIA',
+  link: 'https://kehindewiley.com/',
+  slug: 'kehinde-wiley'
 },{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Kim Petras',
+  image: 'images/kpetras.jpg',
+  category: 'ARTS',
+  community: 'LGBTQIA',
+  community2: 'FEMALE',
+  link: 'https://www.instagram.com/kimpetras/?hl=en',
+  slug: 'kim-petras'
 },{
   name: '',
   image: 'images/*.jpg',
