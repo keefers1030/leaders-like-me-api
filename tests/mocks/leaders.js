@@ -29,3 +29,5 @@ const singleLeader = [{
   link: 'https://margaretcho.com/',
   slug: 'margaret-cho'
 }]
+
+module.exports = { leaders, singleLeader}
