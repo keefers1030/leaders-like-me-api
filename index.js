@@ -1,6 +1,6 @@
 const express = require('express');
 const leaders = require('./leaders')
-// const { getAllLeaders, getLeaderSlug, addNewLeader } = require('./controller/leadersController.js')
+const { getAllLeaders, getLeaderSlug, addNewLeader } = require('./controller/leadersController.js')
 
 const app = express()
 
@@ -10,11 +10,11 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-//app.get('/leaders/', getAllLeaders)
+app.get('/leaders/', getAllLeaders)
 
-//app.get('/leaders/:slug', getLeaderSlug)
+app.get('/leaders/:slug', getLeaderSlug)
 
-//app.post('/leaders', express.json(), addNewLeader)
+app.post('/leaders', express.json(), addNewLeader)
 
 app.get('/api-doc', (req, res) => {
   res.render('api-doc');

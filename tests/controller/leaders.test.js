@@ -2,57 +2,57 @@ const chai = require('chai')
 const sinon = require('sinon')
 const sinonChai = require('sinon-chai')
 const { describe, it } = require('mocha')
-const { getAllLeaders, getLeaderSlug, addNewLeader } = require('../../controller/villainsController')
+const { getAllLeaders, getLeaderSlug, addNewLeader } = require('../../controller/leadersController')
 const models = require('../../models')
-const { villainsList, singleVillain } = require('../mocks/villains')
+const { leaders, singleLeader } = require('../mocks/leaders')
 const { req } = require('express')
 
 chai.use(sinonChai)
 const { expect } = chai
 
-describe('Villains controller', () => {
+describe('Leaders controller', () => {
   let stubbedFindOne
 
   before(() => {
-    stubbedFindOne = sinon.stub(models.villains, 'findOne')
+    stubbedFindOne = sinon.stub(models.leaders, 'findOne')
   })
 
   afterEach(() => {
     stubbedFindOne.resetBehavior()
   })
 
-  describe('Get all villains', () => {
-    it('gets all villains with the provided DB and calls response.send() with it', async () => {
-      const stubbedFindAll = sinon.stub(models.villains, 'findAll').returns(villainsList)
+  describe('Get all leaders', () => {
+    it('gets all leaders with the provided DB and calls response.send() with it', async () => {
+      const stubbedFindAll = sinon.stub(models.leaders, 'findAll').returns(leaders)
       const stubbedSend = sinon.stub()
       const res = { send: stubbedSend }
 
-      await getAllVillains({}, res)
+      await getAllLeaders({}, res)
       expect(stubbedFindAll).to.have.callCount(1)
-      expect(stubbedSend).to.have.been.calledWith(villainsList)
+      expect(stubbedSend).to.have.been.calledWith(leaders)
     })
   })
 
-  describe('Get villain by slug', () => {
-    it('get a villain from DB using provided slug and calls response.send() with the villain', async () => {
-      stubbedFindOne.returns(singleVillain)
-      const req = { params: { slug: 'ursula' } }
+  describe('Get leader by slug', () => {
+    it('get a leader from DB using provided slug and calls response.send() with the leader', async () => {
+      stubbedFindOne.returns(singleLeader)
+      const req = { params: { slug: 'margaret-cho' } }
       const stubbedSend = sinon.stub()
       const res = { send: stubbedSend }
 
-      await getVillainSlug(req, res)
+      await getLeaderSlug(req, res)
       expect(stubbedFindOne).to.have.callCount(1)
-      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'ursula' } })
-      expect(stubbedSend).to.have.been.calledWith(singleVillain)
+      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'margaret-cho' } })
+      expect(stubbedSend).to.have.been.calledWith(singleLeader)
     })
 
-    it('return a 404 when no villain is found', async () => {
+    it('return a 404 when no leader is found', async () => {
       stubbedFindOne.returns(null)
       const req = { params: { slug: 'not-found' } }
       const stubbedSendStatus = sinon.stub()
       const res = { sendStatus: stubbedSendStatus }
 
-      await getVillainSlug(req, res)
+      await getLeaderSlug(req, res)
       expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'not-found' } })
       expect(stubbedSendStatus).to.have.been.calledWith(404)
     })
@@ -65,30 +65,27 @@ describe('Villains controller', () => {
       const stubbedStatus = sinon.stub().returns({ send: stubbedSend })
       const res = { status: stubbedStatus }
 
-      await getVillainSlug(req, res)
+      await getLeaderSlug(req, res)
 
       expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'error-slug' } })
       expect(stubbedStatus).to.have.been.calledWith(500)
-      expect(stubbedSend).to.have.been.calledWith('Unable to retrieve villain, please try again')
+      expect(stubbedSend).to.have.been.calledWith('Unable to retrieve a leader, please try again')
     })
   })
 
-  describe('Save new villain', () => {
-    it('accepts new villain details and saves to DB, returns the saved hero with a 201 status', async () => {
-      const stubbedCreate = sinon.stub(models.villains, 'create').returns(singleVillain)
-      const req = { body: singleVillain }
+  describe('Save new leader', () => {
+    it('accepts new leader details and saves to DB, returns the saved leader with a 201 status', async () => {
+      const stubbedCreate = sinon.stub(models.leaders, 'create').returns(singleLeader)
+      const req = { body: singleLeader }
       const stubbedSend = sinon.stub()
       const stubbedStatus = sinon.stub().returns({ send: stubbedSend })
       const res = { status: stubbedStatus }
 
-      await addNewVillain(req, res)
+      await addNewLeader(req, res)
 
-      expect(stubbedCreate).to.have.been.calledWith(singleVillain)
+      expect(stubbedCreate).to.have.been.calledWith(singleLeader)
       expect(stubbedStatus).to.have.been.calledWith(201)
-      expect(stubbedSend).to.have.been.calledWith(singleVillain)
+      expect(stubbedSend).to.have.been.calledWith(singleLeader)
     })
   })
 })
-
-
-
