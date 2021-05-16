@@ -172,6 +172,81 @@ const leaders = [{
   link: 'https://www.instagram.com/kimpetras/?hl=en',
   slug: 'kim-petras'
 },{
+  name: 'Alice Ball',
+  image: 'images/aball.jpg',
+  category: 'SCIENCE',
+  community: 'BIPOC',
+  community2: 'FEMALE',
+  link: 'https://www.biography.com/scientist/alice-ball',
+  slug: 'alice-ball'
+},{
+  name: 'Ai-Jen Poon',
+  image: 'images/apoon.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'AAPI',
+  community2: 'FEMALE',
+  link: 'https://www.domesticworkers.org/ai-jen-poo',
+  slug: 'ai-jen-poon'
+},{
+  name: 'Ajay Bhatt',
+  image: 'images/abhatt.jpg',
+  category: 'TECHNOLOGY',
+  community: 'AAPI',
+  community2: '',
+  link: 'https://www.yourtechstory.com/2020/05/04/ajay-bhatt-the-mastermind-behind-invention-of-usb/',
+  slug: 'ajay-bhatt'
+},{
+  name: 'Yuri Kochiyama',
+  image: 'images/ykochiyama.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'AAPI',
+  community2: 'FEMALE',
+  link: 'https://www.zinnedproject.org/news/tdih/yuri-kochiyama-was-born/',
+  slug: 'yuri-kochiyama'
+},{
+  name: 'Eric Yuan',
+  image: 'images/eyuan.jpg',
+  category: 'TECHNOLOGY',
+  community: 'AAPI',
+  community2: '',
+  link: 'https://www.carnegie.org/awards/honoree/eric-yuan/',
+  slug: 'eric-yuan'
+},{
+  name: 'Sudha Chandran',
+  image: 'images/schandran.jpg',
+  category: 'ARTS',
+  community: 'AAPI',
+  community2: 'DISABLED',
+  link: 'https://www.rollingwithoutlimits.com/view-post/Meet-Sudha-Chandran-A-World-famous-dancer-performer-actress-and-celebrity-who-overcame-dis',
+  slug: 'sudha-chandran'
+},
+{
+  name: 'David Blunkett',
+  image: 'images/dblunkett.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'DISABLED',
+  community2: '',
+  link: 'https://en.wikipedia.org/wiki/David_Blunkett',
+  slug: 'david-blunkett'
+},{
+  name: 'Frida Kahlo',
+  image: 'images/fkahlo.jpg',
+  category: 'ARTS',
+  community: 'DISABLED',
+  community2: 'FEMALE',
+  link: 'https://www.fridakahlo.org/',
+  slug: 'frida-kahlo'
+},
+{
+  name: 'Ryan O\'Connell',
+  image: 'images/roconnell.jpg',
+  category: 'ARTS',
+  community: 'DISABLED',
+  community2: 'LGBTQIA',
+  link: 'https://www.out.com/print/2021/2/08/ryan-oconnells-mission-raise-queer-disabled-stories-has-only-begun',
+  slug: 'ryan-oconnell'
+},
+{
   name: '',
   image: 'images/*.jpg',
   category: '',
@@ -179,47 +254,8 @@ const leaders = [{
   community2: '',
   link: '',
   slug: ''
-},{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
-},{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
-},{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
-},{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
-},{
-  name: '',
-  image: 'images/*.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
-},{
+},
+{
   name: '',
   image: 'images/*.jpg',
   category: '',
