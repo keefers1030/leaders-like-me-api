@@ -247,17 +247,139 @@ const leaders = [{
   slug: 'ryan-oconnell'
 },
 {
+  name: 'Josephine Baker',
+  image: 'images/jbaker.jpg',
+  category: 'ARTS',
+  community: 'LGBTQIA',
+  community2: 'BIPOC',
+  link: 'https://www.them.us/story/josephine-baker-activism-history',
+  slug: 'josephine-baker'
+},
+{
+  name: 'Michael Dillon',
+  image: 'images/mdillon.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'LGBTQIA',
+  community2: '',
+  link: 'https://en.wikipedia.org/wiki/Michael_Dillon',
+  slug: 'michael-dillon'
+},
+{
+  name: 'Ifti Nasim',
+  image: 'images/inasim.jpg',
+  category: 'ARTS',
+  community: 'LGBTQIA',
+  community2: 'AAPI',
+  link: 'http://chicagolgbthalloffame.org/nasim-ifti/',
+  slug: 'ifti-nasim'
+},
+{
+  name: 'Simon Nkoli',
+  image: 'images/snkoli.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'LGBTQIA',
+  community2: 'BIPOC',
+  link: 'https://legacyprojectchicago.org/person/simon-tseko-nkoli',
+  slug: 'simon-nkoli'
+},
+{
+  name: 'Nancy Cárdenas',
+  image: 'images/ncardenas.jpg',
+  category: 'ARTS',
+  community: 'LGBTQIA',
+  community2: 'FEMALE',
+  link: 'https://www.makingqueerhistory.com/articles/2020/4/29/nancy-crdenas-part-i',
+  slug: 'nancy-cardenas'
+},
+{
+  name: 'Abraham Nemeth',
+  image: 'images/anemeth.jpg',
+  category: 'MATH',
+  community: 'DISABLED',
+  community2: '',
+  link: 'https://sites.aph.org/hall/inductees/nemeth/',
+  slug: 'andrew-nemeth'
+},
+{
+  name: 'Wanda Díaz Merced',
+  image: 'images/wmerced.jpg',
+  category: 'SCIENCE',
+  community: 'DISABLED',
+  community2: 'FEMALE',
+  link: 'https://royalsociety.org/topics-policy/diversity-in-science/scientists-with-disabilities/wanda-diaz-merced/',
+  slug: 'wanda-diaz-merced'
+},
+{
+  name: 'Richard Mankin',
+  image: 'images/rmankin.jpg',
+  category: 'SCIENCE',
+  community: 'DISABLED',
+  community2: '',
+  link: 'https://www.sciencebuddies.org/blog/stem-for-everyone-richard-mankin',
+  slug: 'richard-mankin'
+},
+{
+  name: 'Bernard Morin',
+  image: 'images/bmorin.jpg',
+  category: 'MATH',
+  community: 'DISABLED',
+  community2: '',
+  link: 'https://en.wikipedia.org/wiki/Bernard_Morin',
+  slug: 'bernard-morin'
+},
+{
+  name: 'Nyle DiMarco',
+  image: 'images/ndimarco.jpg',
+  category: 'ARTS',
+  community: 'LGTBQIA',
+  community2: 'DISABLED',
+  link: 'https://www.instagram.com/nyledimarco/',
+  slug: 'nyle-dimarco'
+},
+{
+  name: 'Dr. Caroline Solomon',
+  image: 'images/csolomon.jpg',
+  category: 'SCIENCE',
+  community: 'DISABLED',
+  community2: 'FEMALE',
+  link: 'https://my.gallaudet.edu/caroline-solomon',
+  slug: 'caroline-solomon'
+},
+{
+  name: 'Dr. Marie M. Daly',
+  image: 'images/mdaly.jpg',
+  category: 'SCIENCE',
+  community: 'BIPOC',
+  community2: 'FEMALE',
+  link: 'https://www.acs.org/content/acs/en/education/whatischemistry/african-americans-in-sciences/marie-maynard-daly.html',
+  slug: 'marie-daly'
+},{
+  name: 'Dr. Temple Grandin',
+  image: 'images/tgrandin.jpg',
+  category: 'SCIENCE',
+  community: 'NEURODIVERGENT',
+  community2: 'FEMALE',
+  link: 'https://www.templegrandin.com/',
+  slug: 'temple-grandin'
+},{
   name: '',
-  image: 'images/*.jpg',
+  image: 'images/.jpg',
   category: '',
   community: '',
   community2: '',
   link: '',
   slug: ''
-},
-{
+},{
   name: '',
-  image: 'images/*.jpg',
+  image: 'images/.jpg',
+  category: '',
+  community: '',
+  community2: '',
+  link: '',
+  slug: ''
+},{
+  name: '',
+  image: 'images/.jpg',
   category: '',
   community: '',
   community2: '',
