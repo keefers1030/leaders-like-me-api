@@ -362,28 +362,71 @@ const leaders = [{
   link: 'https://www.templegrandin.com/',
   slug: 'temple-grandin'
 },{
-  name: '',
-  image: 'images/.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Rosa May Billinghurst',
+  image: 'images/rbillinghurst.jpg',
+  category: 'SOCIAL JUSTICE',
+  community: 'DISABLED',
+  community2: 'FEMALE',
+  link: 'https://www.nytimes.com/2020/10/30/obituaries/rosa-may-billinghurst-overlooked.html',
+  slug: 'rosa-may-billinghurst'
 },{
-  name: '',
-  image: 'images/.jpg',
-  category: '',
-  community: '',
-  community2: '',
-  link: '',
-  slug: ''
+  name: 'Farida Bedwei',
+  image: 'images/fbedwei.jpg',
+  category: 'ENGINEERING',
+  community: 'BIPOC',
+  community2: 'DISABLED',
+  link: 'https://en.wikipedia.org/wiki/Farida_Bedwei',
+  slug: 'farida-bedwei'
 },{
-  name: '',
-  image: 'images/.jpg',
-  category: '',
-  community: '',
+  name: 'Mahlia Amatina',
+  image: 'images/mamatina.jpg',
+  category: 'ARTS',
+  community: 'NEURODIVERGENT',
+  community2: 'FEMALE',
+  link: 'https://the-dots.com/users/mahlia-amatina-571875',
+  slug: 'mahlia-amatina'
+},
+{
+  name: 'Florence Welch',
+  image: 'images/fwelch.jpg',
+  category: 'ARTS',
+  community: 'NEURODIVERGENT',
+  community2: 'FEMALE',
+  link: 'https://florenceandthemachine.net/',
+  slug: 'florence-welch'
+},{
+  name: 'Ursula Burns',
+  image: 'images/uburns.jpg',
+  category: 'ENGINEERING',
+  community: 'BIPOC',
+  community2: 'FEMALE',
+  link: 'https://www.forbes.com/profile/ursula-burns/?sh=434ae8b240a0',
+  slug: 'Ursula Burns'
+},{
+  name: 'Maya Lin',
+  image: 'images/mlin.jpg',
+  category: 'ARTS',
+  community: 'AAPI',
+  community2: 'FEMALE',
+  link: 'https://www.mayalinstudio.com/',
+  slug: 'maya-lin'
+},
+{
+  name: 'John Forbes Nash',
+  image: 'images/jnash.jpg',
+  category: 'MATH',
+  community: 'NEURODIVERGENT',
   community2: '',
-  link: '',
-  slug: ''
+  link: 'https://www.mayalinstudio.com/',
+  slug: 'john-nash'
+},
+{
+  name: 'Mae Jemison',
+  image: 'images/mjemison.jpg',
+  category: 'ENGINEERING',
+  community: 'BIOPC',
+  community2: 'FEMALE',
+  link: 'https://www.womenshistory.org/education-resources/biographies/mae-jemison',
+  slug: 'mae-jemison'
 },
 ]
