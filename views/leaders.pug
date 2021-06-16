@@ -17,6 +17,11 @@ body
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 
+.leaderRandomized
+  for leader in leaders
+    a(href=`/leaders/${leaders.name}`)= leaders.name
+    p Your leader is #[a(href=`leaders/${leaders.name}`) 
+
 footer
   .footer-container
     p © 2021 Keith March Mistler | #[a(href="api-doc.pug") API Documentation]
