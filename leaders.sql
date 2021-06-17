@@ -1,5 +1,5 @@
-CREATE DATABASE leadersLikeMe;
-USE leadersLikeMe;
+CREATE DATABASE leaders;
+USE leaders;
 CREATE TABLE leaders (
   id INT auto_increment,
   name VARCHAR(255),
