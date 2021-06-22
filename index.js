@@ -1,6 +1,6 @@
 const express = require('express');
-//const leaders = require('./leaders')
-const { getAllLeaders, getLeaderSlug, addNewLeader } = require('./controller/leadersController.js')
+const leaders = require('./leaders')
+const { getAllLeaders, getLeaderSlug, addNewLeader, getLeaderCategory, getLeaderCommunity } = require('./controller/leadersController.js')
 
 const app = express()
 
@@ -10,9 +10,13 @@ app.get('/', (req, res) => {
   res.render('index')
 });
 
-app.get('/leaders/', getAllLeaders)
+app.get('/leaders', getAllLeaders)
 
 app.get('/leaders/:slug', getLeaderSlug)
+
+app.get('/leaders/category/:category', getLeaderCategory)
+
+app.get('/leaders/community/:community', getLeaderCommunity)
 
 app.post('/leaders', express.json(), addNewLeader)
 
@@ -30,12 +34,6 @@ app.all('*', (req, res) => {
   return res.sendStatus(404)
 })
 
-app.listen(3000, () => {
-  console.log('Listening on port 3000...');
+app.listen(1337, () => {
+  console.log('Listening on port 1337...');
 });
-
-
-
-
-
-

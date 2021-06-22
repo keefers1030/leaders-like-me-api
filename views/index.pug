@@ -16,35 +16,37 @@ body
 .logos
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
-    
-.inputs
-  .option1
-    h2 My gender is
-    span.custom-dropdown
-      select
-        option Female ♀️
-        option Male ♂
-        option Transgender ⚨
-        option Gender non-binary ⚥
-  .option2
-    h2 I identify as
-    span.custom-dropdown
-      select
-        option Gay ⚣
-        option Heterosexual ⚤
-        option Bisexual ⚥
-        option None of the above
-  .option3
-    h2 I like
-    span.custom-dropdown
-      select
-        option Science
-        option Technology
-        option Engineering
-        option Arts
-        option Math
-        option Social justice
-input(type="submit", value="Submit")
+
+form(action='/leaders' method="post")
+  .inputs
+    .option1
+      h2 My gender is
+      span.custom-dropdown
+        select(name='gender', id='gender')
+          option Female ♀️
+          option Male ♂
+          option Transgender ⚨
+          option Gender non-binary ⚥
+    .option2
+      h2 I identify as
+      span.custom-dropdown
+        select(name='sgm', id='sgm')
+          option Gay ⚣
+          option Heterosexual ⚤
+          option Bisexual ⚥
+          option None of the above
+    .option3
+      h2 I like
+      span.custom-dropdown
+        select(name='steam', id='steam')
+          option Science
+          option Technology
+          option Engineering
+          option Arts
+          option Math
+          option Social justice
+input(type="submit", value="Submit") 
+
 footer
   .footer-container
     p © 2021 Keith March Mistler | #[a(href="api-doc") API Documentation]
