@@ -7,7 +7,7 @@ module.exports = {
   image: 'kjohnson.jpg',
   category: 'MATH',
   community: 'BIPOC',
-  community2: '',
+  community2: 'FEMALE',
   link: 'https://www.nasa.gov/content/katherine-johnson-biography',
   slug: 'katherine-johnson'
 }, {
@@ -15,7 +15,7 @@ module.exports = {
   image: 'aturing.jpg',
   category: 'ENGINEERING',
   community: 'LGBTQIA',
-  community2: '',
+  community2: 'NA',
   link: 'https://en.wikipedia.org/wiki/Alan_Turing',
   slug: 'alan-turing'
 },{
@@ -23,7 +23,7 @@ module.exports = {
   image: 'alovelace.jpg',
   category: 'ENGINEERING',
   community: 'FEMALE',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.computerhistory.org/babbage/adalovelace/',
   slug: 'ada-lovelace'
 }
@@ -32,7 +32,7 @@ module.exports = {
   image: 'shawking.jpg',
   category: 'SCIENCE',
   community: 'DISABLED',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.frontiersofknowledgeawards-fbbva.es/galardonados/stephen-hawking-2/',
   slug: 'stephen-hawking'
 },
@@ -41,7 +41,7 @@ module.exports = {
   image: 'fprice.jpg',
   category: 'ARTS',
   community: 'BIPOC',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.classicfm.com/discover-music/florence-price/',
   slug: 'florence-price'
 },
@@ -131,7 +131,7 @@ module.exports = {
   image: 'dsutton.jpg',
   category: 'SCIENCE',
   community: 'BIPOC',
-  community2: '',
+  community2: 'NA',
   link: 'https://twitter.com/DoctorDarienMD',
   slug: 'darien-sutton'
 },
@@ -196,7 +196,7 @@ module.exports = {
   image: 'abhatt.jpg',
   category: 'TECHNOLOGY',
   community: 'AAPI',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.yourtechstory.com/2020/05/04/ajay-bhatt-the-mastermind-behind-invention-of-usb/',
   slug: 'ajay-bhatt'
 },{
@@ -212,7 +212,7 @@ module.exports = {
   image: 'eyuan.jpg',
   category: 'TECHNOLOGY',
   community: 'AAPI',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.carnegie.org/awards/honoree/eric-yuan/',
   slug: 'eric-yuan'
 },{
@@ -229,7 +229,7 @@ module.exports = {
   image: 'dblunkett.jpg',
   category: 'SOCIAL JUSTICE',
   community: 'DISABLED',
-  community2: '',
+  community2: 'NA',
   link: 'https://en.wikipedia.org/wiki/David_Blunkett',
   slug: 'david-blunkett'
 },{
@@ -264,7 +264,7 @@ module.exports = {
   image: 'mdillon.jpg',
   category: 'SOCIAL JUSTICE',
   community: 'LGBTQIA',
-  community2: '',
+  community2: 'NA',
   link: 'https://en.wikipedia.org/wiki/Michael_Dillon',
   slug: 'michael-dillon'
 },
@@ -300,7 +300,7 @@ module.exports = {
   image: 'anemeth.jpg',
   category: 'MATH',
   community: 'DISABLED',
-  community2: '',
+  community2: 'NA',
   link: 'https://sites.aph.org/hall/inductees/nemeth/',
   slug: 'andrew-nemeth'
 },
@@ -318,7 +318,7 @@ module.exports = {
   image: 'rmankin.jpg',
   category: 'SCIENCE',
   community: 'DISABLED',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.sciencebuddies.org/blog/stem-for-everyone-richard-mankin',
   slug: 'richard-mankin'
 },
@@ -327,7 +327,7 @@ module.exports = {
   image: 'bmorin.jpg',
   category: 'MATH',
   community: 'DISABLED',
-  community2: '',
+  community2: 'NA',
   link: 'https://en.wikipedia.org/wiki/Bernard_Morin',
   slug: 'bernard-morin'
 },
@@ -335,7 +335,7 @@ module.exports = {
   name: 'Nyle DiMarco',
   image: 'ndimarco.jpg',
   category: 'ARTS',
-  community: 'LGTBQIA',
+  community: 'LGBTQIA',
   community2: 'DISABLED',
   link: 'https://www.instagram.com/nyledimarco/',
   slug: 'nyle-dimarco'
@@ -361,8 +361,8 @@ module.exports = {
   name: 'Dr. Temple Grandin',
   image: 'tgrandin.jpg',
   category: 'SCIENCE',
-  community: 'NEURODIVERGENT',
-  community2: 'FEMALE',
+  community: 'FEMALE',
+  community2: 'NEURODIVERGENT',
   link: 'https://www.templegrandin.com/',
   slug: 'temple-grandin'
 },{
@@ -420,7 +420,7 @@ module.exports = {
   image: 'jnash.jpg',
   category: 'MATH',
   community: 'NEURODIVERGENT',
-  community2: '',
+  community2: 'NA',
   link: 'https://www.mayalinstudio.com/',
   slug: 'john-nash'
 },
@@ -428,7 +428,7 @@ module.exports = {
   name: 'Mae Jemison',
   image: 'mjemison.jpg',
   category: 'ENGINEERING',
-  community: 'BIOPC',
+  community: 'BIPOC',
   community2: 'FEMALE',
   link: 'https://www.womenshistory.org/education-resources/biographies/mae-jemison',
   slug: 'mae-jemison'

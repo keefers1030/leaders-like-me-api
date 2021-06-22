@@ -10,10 +10,10 @@ module.exports = {
       name: { type: Sequelize.STRING },
       image: {type: Sequelize.STRING }, 
       category: {type: Sequelize.ENUM('SCIENCE', 'TECHNOLOGY', 'ENGINEERING', 'ARTS', 'MATH', 'SOCIAL JUSTICE')},
-      community: {type: Sequelize.ENUM('Female','BIPOC', 'AAPI', 'LGBTQIA', 'DISABLED', 'NEURODIVERGENT')},
-      community2: {type: Sequelize.ENUM('Female','BIPOC', 'AAPI', 'LGBTQIA', 'DISABLED', 'NEURODIVERGENT')},
+      community: {type: Sequelize.ENUM('FEMALE','BIPOC', 'AAPI', 'LGBTQIA', 'DISABLED', 'NEURODIVERGENT')},
+      community2: {type: Sequelize.ENUM('FEMALE','BIPOC', 'AAPI', 'LGBTQIA', 'DISABLED', 'NEURODIVERGENT', 'NA')},
       link: {type: Sequelize.STRING },
-      slug:{ type: Sequelize.STRING, unique: TRUE },
+      slug:{ type: Sequelize.STRING, unique: true },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: {
         type: Sequelize.DATE,
