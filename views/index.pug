@@ -17,13 +17,13 @@ body
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 
-form(action='/leaders' method="post")
+form(action='/leaderLikeMe' method="post")
   .inputs
     .option1
       h2 My gender is
       span.custom-dropdown
         select(name='gender', id='gender')
-          option Female ♀️
+          option Female ♀️  
           option Male ♂
           option Transgender ⚨
           option Gender non-binary ⚥
@@ -45,7 +45,7 @@ form(action='/leaders' method="post")
           option Arts
           option Math
           option Social justice
-input(type="submit", value="Submit") 
+  input(type="submit", value="Submit")
 
 footer
   .footer-container

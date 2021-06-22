@@ -17,10 +17,10 @@ body
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 
-.leaderRandomized
-  for leader in leaders
-    a(href=`/leaders/${leaders.name}`)= leaders.name
-    p Your leader is #[a(href=`leaders/${leaders.name}`)
+.leaderReturn
+    h3 Leaders like you include: #{leader}
+      //- for leader in leaders
+      //-   h3.leaders.name
 
 footer
   .footer-container

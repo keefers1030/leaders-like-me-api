@@ -18,6 +18,12 @@ app.get('/leaders/category/:category', getLeaderCategory)
 
 app.get('/leaders/community/:community', getLeaderCommunity)
 
+app.post("/leaderLikeMe" , function(req, res){
+    res.render('leader',{
+        leader: req.body
+    })
+})
+
 app.post('/leaders', express.json(), addNewLeader)
 
 app.get('/api-doc', (req, res) => {
