@@ -1,6 +1,6 @@
 const express = require('express');
 const leaders = require('./leaders')
-const { getAllLeaders, getLeaderSlug, addNewLeader, getLeaderCategory, getLeaderCommunity } = require('./controller/leadersController.js')
+const { getAllLeaders, getLeaderSlug, addNewLeader, getLeaderCategory, getLeaderCommunity, populateLeadersbyGender, getLeaderSlugRender} = require('./controller/leadersController.js')
 
 const app = express()
 
@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
   res.render('index')
 });
 
+// app.get('/leaders/render/:slug', getLeaderSlugRender)
+
 app.get('/leaders', getAllLeaders)
 
 app.get('/leaders/:slug', getLeaderSlug)
@@ -18,9 +20,9 @@ app.get('/leaders/category/:category', getLeaderCategory)
 
 app.get('/leaders/community/:community', getLeaderCommunity)
 
-app.post("/leaderLikeMe" , function(req, res){
+app.get("/leaderLikeMe" , function(req, res){
     res.render('leader',{
-        leader: req.body
+        getAllLeaders
     })
 })
 
@@ -33,6 +35,13 @@ app.get('/api-doc', (req, res) => {
 app.get('/leader', (req, res) => {
   res.render('leader')
 });
+
+// router.get("/main", function(){
+//   let pageInfo = {};
+//   pageInfo.title = "Demo";
+//   pageInfo.populateLeadersbyGender = populateLeadersbyGender;
+//   res.render("main", pageInfo);
+// })
 
 app.use('/public', express.static(__dirname + "/public"));
 

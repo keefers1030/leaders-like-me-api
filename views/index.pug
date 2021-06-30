@@ -5,6 +5,7 @@ head
   title Leaders like me
   style
     include ../public/styles.css
+  //- script(src='../controller/leadersController.js')
   link(rel="preconnect", href="https://fonts.gstatic.com")
   link(href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap", rel="stylesheet")
 
@@ -17,13 +18,14 @@ body
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 
-form(action='/leaderLikeMe' method="post")
+form(action='/leaderLikeMe' method="get")
   .inputs
     .option1
       h2 My gender is
       span.custom-dropdown
-        select(name='gender', id='gender')
-          option Female ♀️  
+        select(name='gender', id='gender', onchange='populateLeadersbyGender()')
+          option Choose one
+          option Female ♀
           option Male ♂
           option Transgender ⚨
           option Gender non-binary ⚥
@@ -31,6 +33,7 @@ form(action='/leaderLikeMe' method="post")
       h2 I identify as
       span.custom-dropdown
         select(name='sgm', id='sgm')
+          option Choose one
           option Gay ⚣
           option Heterosexual ⚤
           option Bisexual ⚥
@@ -39,6 +42,7 @@ form(action='/leaderLikeMe' method="post")
       h2 I like
       span.custom-dropdown
         select(name='steam', id='steam')
+          option Choose one
           option Science
           option Technology
           option Engineering

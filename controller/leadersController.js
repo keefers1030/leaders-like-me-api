@@ -21,6 +21,20 @@ const getLeaderSlug = async (req, res) => {
   }
 }
 
+const getLeaderSlugRender = async (req, res) => {
+  try {
+    const { slug } = req.params
+
+    const leaders = await models.leaders.findOne({ where: { slug } })
+
+    return leaders
+      ? res.render(leaders)
+      : res.sendStatus(404)
+  } catch (error) {
+    return res.status(500).send('Unable to retrieve leader, please try again')
+  }
+}
+
 const getLeaderCommunity = async (req, res) => {
   try {
     const { community } = req.params
@@ -64,4 +78,33 @@ const addNewLeader = async (req, res) => {
   return res.status(201).send(leader)
 }
 
-module.exports = { getAllLeaders, getLeaderSlug, getLeaderCommunity, getLeaderCategory, addNewLeader }
+// let sgm = document.getElementById("sgm")
+// let sgmOption = sgm.option[e.selectedIndex].text
+
+// let steam = document.getElementById("steam")
+// let steamOption = steam.option[e.selectedIndex].text
+
+const populateLeadersbyGender = () => {
+let gender = document.getElementById("gender")
+let genderOption = gender.option[gender.selectedIndex].text
+    console.log(genderOption)
+
+  switch (genderOption) {
+    case 'female':
+    if (leaders.category == 'female' || leaders.category2 == 'female')
+      return `${leaders.name}`
+
+    case 'transgender':
+    if (leaders.category == 'lgbtqia' || leaders.category2 == 'lgbtqia')
+      return `${leaders.name}`
+
+    case 'gender non-binary':
+    if (leaders.category == 'lgbtqia' || leaders.category2 == 'lgbtqia')
+      return `${leaders.name}`
+
+    default:
+      break;
+
+}}
+
+module.exports = { getAllLeaders, getLeaderSlug, getLeaderCommunity, getLeaderCategory, addNewLeader, populateLeadersbyGender, getLeaderSlugRender }

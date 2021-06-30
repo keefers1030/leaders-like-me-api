@@ -17,10 +17,14 @@ body
   img(src="../public/images/leaders.png", alt="leaders") 
   h1 Leaders like me
 
+
+
 .leaderReturn
-    h3 Leaders like you include: #{leader}
-      //- for leader in leaders
-      //-   h3.leaders.name
+  h3 Leader Categories
+    ul
+      for leader in leaders ? leaders : []
+        li
+          a(href=`/title/${leaders.name}`)= leaders.name
 
 footer
   .footer-container
